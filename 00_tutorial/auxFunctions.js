@@ -5,11 +5,13 @@ function myLog(stuffPrint){
 }
 
 // print from for loop
+myLog('Print for loop')
 for (var i=0; i<5; i++){
     myLog("Iteration of i " + i)
 }
 
 // Objects
+myLog('<br> Objetcs')
 var nameP = 'Adrian'
 var ageP = 37
 var hasDrivingLicenceP = true
@@ -30,3 +32,9 @@ myLog(person.nameP)
 myLog(JSON.stringify(person))
 myLog(Object.values(person))
 myLog(JSON.stringify(person.address))
+
+// arrays
+myLog('<br> Arrays')
+var names = ['Adrian', 'Alex', 'Maria']
+myLog(names)
+myLog(names[2])
