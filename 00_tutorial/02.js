@@ -1,0 +1,1 @@
+myLogTitle('If statement')

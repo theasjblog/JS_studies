@@ -7,20 +7,14 @@ Arrays
 Functions
 */
 
-// simple function to make sure we go to a new line after we print
-function myLog(stuffPrint) {
-    // <br> makes a new line
-    document.write(stuffPrint + "<br>")
-}
-
 // print from for loop
-myLog('Print for loop')
+myLogTitle('Print for loop')
 for (var i = 0; i < 5; i++) {
     myLog("Iteration of i " + i)
 }
 
 // Objects
-myLog('<br> Objetcs')
+myLogTitle('Objetcs')
 var nameP = 'Adrian'
 var ageP = 37
 var hasDrivingLicenceP = true
@@ -42,9 +36,11 @@ myLog(person.nameP)
 myLog(JSON.stringify(person))
 myLog(Object.values(person))
 myLog(JSON.stringify(person.address))
+myLog(Object.keys(person))
+myLog(Object.values(person))
 
 // arrays
-myLog('<br> Arrays')
+myLogTitle('Arrays')
 var names = ['Adrian', 'Alex', 'Maria']
 myLog(names)
 myLog(names[2])
@@ -59,7 +55,7 @@ names.forEach(function (i, index) {
 })
 
 // functions
-myLog('<br> Functions')
+myLogTitle('Functions')
 function doAddition(x, y) {
     return (x + y)
 }
