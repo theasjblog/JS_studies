@@ -1,3 +1,5 @@
-myLogTitle('Type coercion and ===')
+myLogTitle('Map')
 
-myLogTitle('Single vs duble quotes')
+myLogTitle('Filter')
+
+myLogTitle('Reduce')

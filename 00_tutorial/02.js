@@ -85,6 +85,8 @@ myLog(10 == 10)
 myLog(10 != 10)
 myLog(!(10 == 10))// best practice to put the negated part in parenthesis
 myLog('10' == 10)// careful: this is true because '10' is evaluated
+myLog('1' == true)// careful: this is true because '1' is evaluated
+myLog('0' == false)// careful: this is true because '0' is evaluated
 myLog('10' === 10)// this is false, as it checks also for type equality
 myLog(10 == 10 && 20 == 10)
 myLog(10 == 10 || 20 == 10)
