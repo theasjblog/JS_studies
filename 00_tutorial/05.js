@@ -32,19 +32,3 @@ addChild(container, '<br>Math.PI<br>')
 addChild(container, Math.PI)
 addChild(container, '<br>Math.multiply(Math.PI, Math.PI)<br>')
 addChild(container, Math.multiply(Math.PI, Math.PI))
-/*
-// create the content
-var content = document.createElement("span");
-content.innerHTML = 'Can export variable, class, function<br>';
-//append the content to the container
-container.appendChild(content);
-
-// create the content
-var content = document.createElement("span");
-content.innerHTML = 'Math.add(3,5)<br>';
-//append the content to the container
-container.appendChild(content);
-var content = document.createElement("span");
-content.innerHTML = Math.add(3, 5)
-container.appendChild(content)
-*/
