@@ -10,7 +10,6 @@ asynch mode
 */
 // import the math module
 import * as Math from './supp05.js'
-
 function addChild(container, contentElement) {
     // create the content
     var content = document.createElement("span");
@@ -18,16 +17,13 @@ function addChild(container, contentElement) {
     //append the content to the container
     container.appendChild(content);
 }
-
 // get the main container
 var container = document.getElementById("container");
 
 addChild(container, 'Can export variable, class, function<br>')
-addChild(container, "import * as Math from './supp05.js', or specific functions instead of *")
+addChild(container, "<code>import * as Math from './supp05.js'</code>, or specific functions instead of *")
 addChild(container, '<br>Math.add(3, 5)<br>')
 addChild(container, Math.add(3, 5))
-addChild(container, '<br>Math.subtract(3, 5)<br>')
-addChild(container, Math.subtract(3, 5))
 addChild(container, '<br>Math.multiply(3, 5)<br>')
 addChild(container, Math.multiply(3, 5))
 addChild(container, '<br>Math.divide(3, 5)<br>')
