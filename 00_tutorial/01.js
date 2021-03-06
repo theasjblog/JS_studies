@@ -1,4 +1,17 @@
 // loops
+
+fullCodeString(
+    printCode('var person = [,0') +
+    printCode('{', 1) +
+    printCode("name: 'Alex',", 2) +
+    printCode('age: 22', 2) +
+    printCode('},', 1) +
+    printCode('{', 1) +
+    printCode("name: 'Maria',", 2) +
+    printCode('age: 30') +
+    printCode('{', 1) +
+    printCode(']', 0)
+)
 var person = [
     {
         name: 'Alex',
@@ -11,6 +24,13 @@ var person = [
 ]
 
 myLogTitle('For loop')
+
+fullCodeString(
+    printCode('for (var i = 0; i < person.length; i++) {', 0) +
+    printCode('myLog(person[i].age)', 1) +
+    printCode("myLog('---------')", 1) +
+    printCode('})', 0)
+)
 for (var i = 0; i < person.length; i++) {
     /*
     Index is like in Pyhton here. Starts at 0 and you need to 
@@ -22,6 +42,15 @@ for (var i = 0; i < person.length; i++) {
 }
 
 myLogTitle('While loop')
+fullCodeString(
+    printCode('var n = 0', 0) +
+    printCode('while (n < person.length) {', 0) +
+    printCode('myLog(person[n].name)', 1) +
+    printCode('myLog(person[n].age)', 1) +
+    printCode("myLog('---------')", 1) +
+    printCode('n += 1', 1) +
+    printCode('}', 0)
+)
 var n = 0
 while (n < person.length) {
     myLog(person[n].name)
@@ -31,7 +60,7 @@ while (n < person.length) {
 }
 
 myLogTitle('Do loop')
-
+myLog('The do loop executes at least once, even if the condition is not true.')
 var i = 0
 do {
     /*
