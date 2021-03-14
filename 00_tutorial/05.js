@@ -21,7 +21,8 @@ function addChild(container, contentElement) {
 var container = document.getElementById("container");
 
 addChild(container, 'Can export variable, class, function<br>')
-addChild(container, "<code>import * as Math from './supp05.js'</code>, or specific functions instead of *")
+addChild(container, "<code>import * as Math from './supp05.js'</code>, or specific functions instead of *, ")
+addChild(container, "for instance <code>import {add, divide} from './supp05.js'</code> and then use <code>add()</code> instead of <code>Math.add()</code>")
 addChild(container, '<br>Math.add(3, 5)<br>')
 addChild(container, Math.add(3, 5))
 addChild(container, '<br>Math.multiply(3, 5)<br>')
