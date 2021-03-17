@@ -1,7 +1,7 @@
 // import module
 import * as printHelper from './helpers.js'
 
-const container = document.getElementById("container19");
+const container = document.getElementById("container20");
 
 // Example 1
 class Animal {
